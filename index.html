@@ -1720,7 +1720,7 @@
   <div id="toast"></div>
 
   <script>
-    const EVT = '2026-04-11T13:00:00', WA = '5215512345678';
+    const EVT = '2026-04-11T10:00:00', WA = '5215512345678';
     function mkDrops(id) { const c = document.getElementById(id); if (!c) return; for (let i = 0; i < 16; i++) { const d = document.createElement('div'); d.className = 'drop'; const h = 18 + Math.random() * 30; d.style.cssText = `--dur:${3 + Math.random() * 5}s;--dl:${Math.random() * 8}s;--w:${1.5 + Math.random() * 3}px;--h:${h}px;left:${Math.random() * 100}%;top:-${h}px;opacity:${.18 + Math.random() * .45}`; c.appendChild(d); } }
     function mkPx(id) { const c = document.getElementById(id); if (!c) return; const ic = ['✦', '✧', '·', '◦', '✞'], co = ['#c8a96a', '#8db8d4', '#e2c98a', '#c5dcea', '#a07840']; for (let i = 0; i < 20; i++) { const p = document.createElement('span'); p.className = 'px'; p.style.cssText = `--fs:${8 + Math.random() * 14}px;--pc:${co[i % co.length]};--dur:${7 + Math.random() * 9}s;--dl:${Math.random() * 9}s;left:${Math.random() * 100}%;bottom:${Math.random() * 12}%`; p.textContent = ic[Math.floor(Math.random() * ic.length)]; c.appendChild(p); } }
     mkDrops('db1'); mkPx('px1');
